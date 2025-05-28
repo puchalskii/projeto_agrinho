@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival Virtual "Raízes e Horizontes"</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #27ae60;
+      --primary-dark: #1e8449;
+      --secondary: #d4efdf;
+      --text-dark: #145a32;
+      --text-light: #ffffff;
+      --font-primary: 'Poppins', sans-serif;
+      --transition: 0.3s ease;
+    }
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--secondary);
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin: 0;
+      line-height: 1.2;
+      user-select: none;
+    }
+    header p {
+      margin: 0.3rem 0 0;
+      font-weight: 500;
+      font-style: italic;
+      user-select: none;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: var(--primary-dark);
+      margin: 0;
+      padding: 0.75rem 0;
+      list-style: none;
+    }
+    nav ul li a {
+      color: var(--text-light);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      transition: background-color var(--transition);
+      user-select: none;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: var(--primary);
+      outline: none;
+    }
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+      text-align: center;
+      user-select: none;
+    }
+    h2::before {
+      content: attr(data-emoji) " ";
+      font-size: 1.8rem;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(39, 174, 96, 0.3);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(39, 174, 96, 0.5);
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      text-align: center;
+      color: var(--text-dark);
+    }
+    iframe, video {
+      border-radius: 12px;
+      width: 100%;
+      height: 320px;
+      margin-top: 1rem;
+      outline: none;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 0.5rem 1.2rem;
+      border-radius: 10px;
+      transition: background-color var(--transition), color var(--transition);
+    }
+    a:hover,
+    a:focus {
+      background-color: var(--primary);
+      color: var(--text-light);
+      outline: none;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
+    .carousel img {
+      border-radius: 12px;
+      max-height: 220px;
+      max-width: 100%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .carousel img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: var(--primary-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      text-align: center;
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+      iframe, video {
+        height: 220px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Festival Virtual "Raízes e Horizontes" 🌿</h1>
+    <p>Uma celebração da alma brasileira — entre o campo e a cidade.</p>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="#musica">🎵 Música</a></li>
+      <li><a href="#danca">💃 Dança</a></li>
+      <li><a href="#comida">🍲 Receitas</a></li>
+      <li><a href="#artesanato">🧵 Artesanato</a></li>
+      <li><a href="#galeria">📸 Galeria</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="musica" tabindex="-1">
+      <h2 data-emoji="🎼">Música</h2>
+      <div class="card">
+        <iframe 
+          src="https://www.youtube.com/embed/-BuBuZH-xqs?si=2Uc1NenyYPb2AMUM" 
+          title="Vídeo música Paraná"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p>Ritmos que conectam o Paraná.</p>
+      </div>
+    </section>
+
+    <section id="danca" tabindex="-1">
+      <h2 data-emoji="🕺">Dança</h2>
+      <div class="card">
+        <iframe
+          src="https://www.youtube.com/embed/i8NT_Dl8ajI?si=8ziMkSsQrxfrrrkv"
+          title="Vídeo Dança"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>Do forró ao hip-hop: corpos em movimento contam histórias.</p>
+      </div>
+    </section>
+
+    <section id="comida" tabindex="-1">
+      <h2 data-emoji="🍛">Receitas</h2>
+      <div class="card">
+        <p>Sabores de raízes e horizontes.</p>
+        <a href="https://maispinhais.com.br/wp-content/uploads/2018/04/livro_delicias_do_parana.pdf" target="_blank" download>
+          Baixar Livro de Receitas
+        </a>
+      </div>
+    </section>
+
+    <section id="artesanato" tabindex="-1">
+      <h2 data-emoji="🧶">Artesanato</h2>
+      <div class="card">
+        <p>Tradição, criatividade e mãos que constroem cultura.</p>
+        <a href="https://revistaunquiet.com.br/wp-content/uploads/2023/12/Guia-do-Artesanato-Brasileiro.pdf" target="_blank" download>
+          Baixar Guia de Artesanato
+        </a>
+      </div>
+    </section>
+
+    <section id="galeria" tabindex="-1">
+      <h2 data-emoji="🌄">Galeria</h2>
+      <div class="carousel">
+        <img src="2.webp" alt="Foto do campo" tabindex="0" />
+        <img src="campo_foto_rdziura-3835_0.jpg" alt="Foto da cidade" tabindex="0" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Festival Raízes e Horizontes</p>
+  </footer>
+</body>
+</html>

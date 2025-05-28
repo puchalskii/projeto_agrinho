@@ -1,87 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Festival Raízes e Horizontes</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raízes e Horizontes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #145a32;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .option {
+      background: white;
+      border: 3px solid #27ae60;
+      border-radius: 16px;
+      padding: 2rem 3rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1e8449;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .option:hover {
+      transform: translateY(-5px);
+      background: #e8f6f3;
+    }
+
+    @media (max-width: 600px) {
+      .option {
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Festival Virtual "Raízes e Horizontes"</h1>
-        <p>Uma celebração da alma brasileira — entre o campo e a cidade.</p>
-    </header>
-
-    <nav aria-label="Menu principal">
-        <ul>
-            <li><a href="#musica">Música</a></li>
-            <li><a href="#danca">Dança</a></li>
-            <li><a href="#comida">Receitas</a></li>
-            <li><a href="#artesanato">Artesanato</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="musica">
-            <h2>Música</h2>
-            <p>Ritmos que conectam o Paraná.</p>
-            <div class="card">
-                <video controls>
-                    <source src="<iframe width="560" height="315" src="https://www.youtube.com/embed/-BuBuZH-xqs?si=2Uc1NenyYPb2AMUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" type="video/mp4" />
-                </video>
-            </div>
-        </section>
-
-        <section id="musica">
-            <div class="card">
-                <video controls>
-                    <source src="videos/musica.mp4" type="video/mp4" />
-                </video>
-            </div>
-        </section>
-
-        <section id="danca">
-            <h2>Dança</h2>
-            <div class="card">
-                <video controls>
-                    <source src="videos/danca.mp4" type="video/mp4" />
-                </video>
-                <p>Do forró ao hip-hop: corpos em movimento contam histórias.</p>
-            </div>
-        </section>
-
-        <section id="comida">
-            <h2>Receitas</h2>
-            <div class="card">
-                <p>Sabores de raízes e horizontes.</p>
-                <a href="downloads/receitas.pdf" download>Baixar Livro de Receitas</a>
-            </div>
-        </section>
-
-        <section id="artesanato">
-            <h2>Artesanato</h2>
-            <div class="card">
-                <p>Tradição, criatividade e mãos que constroem cultura.</p>
-                <a href="downloads/artesanato.pdf" download>Baixar Guia de Artesanato</a>
-            </div>
-        </section>
-
-        <section id="galeria">
-            <h2>Galeria</h2>
-            <div class="carousel">
-                <img src="https://placekitten.com/400/250" alt="Cena 1 do festival" />
-                <img src="https://placekitten.com/401/250" alt="Cena 2 do festival" />
-                <img src="https://placekitten.com/402/250" alt="Cena 3 do festival" />
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Festival Raízes e Horizontes</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <h1>🌿 Raízes e Horizontes 🌿 </h1>
+  <div class="buttons">
+    <a class="option" href="cidade.html">🌆 Cidade</a>
+    <a class="option" href="campo.html">🌾 Campo</a>
+  </div>
 </body>
 </html>
